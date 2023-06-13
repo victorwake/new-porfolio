@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+    <title>Victor Pinto Porfolio</title>
+</head>
+<body class="light-theme">
+
+    <!-- Header Section  -->
+
+    <header class="header">
+        <a href="#" class="logo">Porfolio</a>
+
+        <i class="bx bx-menu" id="menu-icon"></i>
+
+        <nav class="navbar">
+                <a id="inicio" href="#home" class="active" style="--i:1;"  >Home</a>
+                <a id="acerca" href="#about"  style="--i:2;">About me</a>
+                <a id="servis" href="#services"  style="--i:3;">Skills</a>
+                <a id="porf" href="#porfolio"  style="--i:4;">Projects</a>
+                <a id="contact" href="#contacto"  style="--i:5;">Contact</a>
+                
+        </nav>
+        
+    </header>
+    <div id="floatingDiv">
+        <a class="light-mode-button" style="--i:5;" aria-label="Toggle Light Mode" onclick="toggleTheme()">
+            <img src="./img/sun.png" height="28px" id="cambiarModoBtn" alt="Imagen 1">
+        </a>
+        <img src="./img/uk-rec.png" height="25px" id="cambiarTextoBtn" alt="Imagen 1">
+    </div>
+
+    <!-- Home Section  -->
+    <section class="home" id="home">
+        <div class="home-content">
+            <h3>Hola, soy</h3>
+            <h1>Victor Pinto</h1>
+            <h3>Y soy un <span class="multiple-texto"></span></h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                Dolores quas quis non fuga cupiditate veniam nostrum 
+                dolor ipsa eum placeat qui aut eveniet iusto rem reprehenderit, 
+                nobis soluta, enim poro!</p>
+                <div class="social-media">
+                    <a href="https://www.facebook.com/Victorpintowake" target="_blank" rel="noreferrer" style="--i:6;"><i class='bx bxl-facebook'></i></a>
+                    <a href="https://www.linkedin.com/in/victor-pinto-fullstack/" target="_blank" rel="noreferrer"style="--i:7;"><i class='bx bxl-linkedin' ></i></a>
+                    <a href="https://github.com/victorwake" target="_blank" rel="noreferrer" style="--i:8;"><i class='bx bxl-github' ></i></a>
+                    <a href="https://www.instagram.com/victorwake/" target="_blank" rel="noreferrer" style="--i:9;"><i class='bx bxl-instagram-alt' ></i></a>
+                </div>
+                <a href="https://github.com/victorwake/porfolio/raw/main/client/src/image/CV-VictorPinto-2023.pdf" class="btn">Download CV</a>
+        </div>
+        <div class="home-img">
+            <img src="./img/perfil.fw.png" alt="" class="home-img">
+        </div>
+    </section>
+
+    <!-- About Section  -->
+
+    <section class="about" id="about">
+        <div class="about-img">
+            <img src="./img/perfil.fw.png" alt="">
+        </div>
+        <div class="about-content">
+            <h2 class="heading">About <span>Me</span></h2>
+            <h3>Full Stack Developer!</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At
+                aliquam ab itaque voluptatum, veritatis, optio eveniet 
+                magnam labore unde earum repudiandae cumque vitae adipisci, 
+                a nam beatae consectetur delectus ducimus?</p>
+                <a href="#" class="btn">Read More</a>
+        </div>
+    </section>
+    
+    <!-- Projects Section  -->
+    <section class="services" id="services">
+        <h2 class="heading">Our <span>Services</span></h2>
+        <div class="services-container">
+            <div class="services-box">
+                <i class='bx bx-code-alt'></i>
+                <h3>Web Development</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda 
+                    quod, beatae temporibus porro quisquam id quo dolore officiis unde? 
+                    Sapiente cumque quae nihil porro. Ex cumque a maiores labore explicabo.</p>
+                    <a href="#" class="btn">Read More</a>
+            </div>
+
+            <div class="services-box">
+                <i class='bx bx-code-alt'></i>
+                <h3>Web Development</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda 
+                    quod, beatae temporibus porro quisquam id quo dolore officiis unde? 
+                    Sapiente cumque quae nihil porro. Ex cumque a maiores labore explicabo.</p>
+                    <a href="#" class="btn">Read More</a>
+            </div>
+
+            <div class="services-box">
+                <i class='bx bx-code-alt'></i>
+                <h3>Web Development</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda 
+                    quod, beatae temporibus porro quisquam id quo dolore officiis unde? 
+                    Sapiente cumque quae nihil porro. Ex cumque a maiores labore explicabo.</p>
+                    <a href="#" class="btn">Read More</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Porfolio Section  -->
+
+    <section class="porfolio" id="porfolio">
+        <h2 class="heading">Latest <span>Project</span></h2>
+        <div class="porfolio-container">
+            <div class="porfolio-box">
+                <img src="./img/game.png" alt="">
+                <div class="porfolio-layer">
+                    <h4>Web Games</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate alias eligendi.</p>
+                <a href="#"><i class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+
+            <div class="porfolio-box">
+                <img src="./img/todo.gif" alt="">
+                <div class="porfolio-layer">
+                    <h4>Web Todo</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate alias eligendi.</p>
+                <a href="#"><i class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+
+            <div class="porfolio-box">
+                <img src="./img/wines.png" alt="">
+                <div class="porfolio-layer">
+                    <h4>Web Wines</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate alias eligendi.</p>
+                <a href="#"><i class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+
+            <div class="porfolio-box">
+                <img src="./img/wines.png" alt="">
+                <div class="porfolio-layer">
+                    <h4>Web Wines</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate alias eligendi.</p>
+                <a href="#"><i class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+
+            <div class="porfolio-box">
+                <img src="./img/wines.png" alt="">
+                <div class="porfolio-layer">
+                    <h4>Web Wines</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate alias eligendi.</p>
+                <a href="#"><i class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+
+            <div class="porfolio-box">
+                <img src="./img/wines.png" alt="">
+                <div class="porfolio-layer">
+                    <h4>Web Wines</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate alias eligendi.</p>
+                <a href="#"><i class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--    section contacto    --> 
+
+    <section  class="contacto" id="contacto">
+        <h2 class="heading">Contact <span>Me!</span></h2>
+
+        <form action="#">
+            <div class="input-box">
+                <input type="text" placeholder="Name" required>
+                <input type="email" placeholder="Email" required>
+            </div>
+            <div class="input-box">
+                <input type="number" placeholder="Mobile Number" required>
+                <input type="text" placeholder="Subject" required>
+
+            </div>
+
+            <textarea name="" id="" cols="30" rows="10" placeholder="You Message"></textarea>
+            <input type="submit" value="Send Message" class="btn">
+        </form>
+    </section>
+
+    <!-- Footer Section  -->
+
+    <footer class="footer">
+        <div class="footer-text">
+            <p>&copy; 2023 <span>Victor Pinto</span> | All Right Reserved.</p>
+            <p class="mail">victorpintowake@gmail.com</p>
+        </div>
+        <div class="footer-iconTop">
+            <a href="#home"><i class='bx bxs-up-arrow-alt'></i></a>
+        </div>
+    </footer>
+
+
+
+    <!-- scroll reveal -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+    
+    <!-- scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script src="script.js"></script>
+    
+</body>
+</html>
