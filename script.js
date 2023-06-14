@@ -122,7 +122,7 @@ soy = soy[1];
 var home_p = document.getElementsByClassName("home-p")[0];
 
 var typed = new Typed('.multiple-texto', {
-    strings: ["Frontend developer", "and", "backend developer"],
+    strings: ["Frontend developer", "backend developer"],
     typeSpeed: 100,
     backSpeed: 50,
     backDelay: 1000,
@@ -138,7 +138,7 @@ var typed = new Typed('.multiple-texto', {
       contact.innerText = "Contacto";
       inicio.innerText = "Inicio";
       hola.innerText = "Hola, soy";
-      soy.innerText = "Soy un ";
+      soy.innerText = "Soy ";
       home_p.innerText = `Algunas palabras que me describen: Intuición, curiosidad, investigación, 
       perseverancia, paciencia, resolución de problemas, adaptabilidad a los 
       cambios, liderazgo, buena predisposición a las sugerencias, comunicación.
@@ -163,7 +163,7 @@ var typed = new Typed('.multiple-texto', {
     taking various courses/bootcamps and working on projects.`,
       typed.reset(); // Reiniciar la animación
     // Cambiar los strings en la configuración de Typed.js al inglés
-    typed.strings = ["Frontend developer", "and", "backend developer"];
+    typed.strings = ["Frontend developer", "backend developer"];
     }
   });
 
