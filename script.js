@@ -56,14 +56,7 @@ ScrollReveal().reveal('.home-content h1, .about-img', { origin: 'left' });
 ScrollReveal().reveal('.home-content p, .about-content', { origin: 'right' });
 
 
-// typed js sirve para que el texto se escriba solo
-var typed = new Typed('.multiple-texto', {
-    strings: ["Frontend developer", "and", "backend developer"],
-    typeSpeed: 100,
-    backSpeed: 100,
-    backDelay: 1000,
-    loop: true
-    });
+
 
 
 
@@ -108,6 +101,14 @@ function loadTheme() {
 // });
 // });
 
+// typed js sirve para que el texto se escriba solo
+// var typed = new Typed('.multiple-texto', {
+//     strings: ["Frontend developer", "and", "backend developer"],
+//     typeSpeed: 100,
+//     backSpeed: 100,
+//     backDelay: 1000,
+//     loop: true
+// });
 
 var cambiarTextoBtn = document.getElementById("cambiarTextoBtn");
 var acercaDe = document.getElementById("acerca");
@@ -115,22 +116,56 @@ var servis = document.getElementById("servis");
 var porf = document.getElementById("porf");
 var contact = document.getElementById("contact");
 var inicio = document.getElementById("inicio");
+var hola = document.getElementById("hola");
+var soy = document.querySelectorAll('.home-content h3');
+soy = soy[1];
+var home_p = document.getElementsByClassName("home-p")[0];
 
-cambiarTextoBtn.addEventListener("click", function() {
+var typed = new Typed('.multiple-texto', {
+    strings: ["Frontend developer", "and", "backend developer"],
+    typeSpeed: 100,
+    backSpeed: 50,
+    backDelay: 1000,
+    loop: true
+  });
+  
+  cambiarTextoBtn.addEventListener("click", function() {
     if (acercaDe.innerText === "About me") {
-        acercaDe.innerText = "Acerca de mi";
-        servis.innerText = "Trabajos";
-        porf.innerText = "Proyectos";
-        contact.innerText = "Contacto";
-        inicio.innerText = "Inicio";
+      // Cambiar el texto al español
+      acercaDe.innerText = "Acerca de mi";
+      servis.innerText = "Trabajos";
+      porf.innerText = "Proyectos";
+      contact.innerText = "Contacto";
+      inicio.innerText = "Inicio";
+      hola.innerText = "Hola, soy";
+      soy.innerText = "Soy un ";
+      home_p.innerText = `Algunas palabras que me describen: Intuición, curiosidad, investigación, 
+      perseverancia, paciencia, resolución de problemas, adaptabilidad a los 
+      cambios, liderazgo, buena predisposición a las sugerencias, comunicación.
+      En este momento me encuentro capacitándome activamente en programación, 
+      realizando varios cursos/bootcamp y proyectos.`;
+      typed.reset(); // Reiniciar la animación
+      // Cambiar los strings en la configuración de Typed.js al español
+      typed.strings = ["desarrollador Frontend", "y", "desarrollador backend"];
     } else {
-        inicio.innerText = "Home";
-        acercaDe.innerText = "About me";
-        servis.innerText = "Skills";
-        porf.innerText = "Projects";
-        contact.innerText = "Contact";
+      // Cambiar el texto al inglés
+      inicio.innerText = "Home";
+      acercaDe.innerText = "About me";
+      servis.innerText = "Skills";
+      porf.innerText = "Projects";
+      contact.innerText = "Contact";
+      hola.innerText = "Hi, I'm";
+      soy.innerText = "And I'm a ";
+    home_p.innerText = `Some words that describe me: Intuition, curiosity, research,
+    perseverance, patience, problem-solving, adaptability to
+    changes, leadership, openness to suggestions, communication.
+    Currently, I am actively training myself in programming,
+    taking various courses/bootcamps and working on projects.`,
+      typed.reset(); // Reiniciar la animación
+    // Cambiar los strings en la configuración de Typed.js al inglés
+    typed.strings = ["Frontend developer", "and", "backend developer"];
     }
-});
+  });
 
 
 

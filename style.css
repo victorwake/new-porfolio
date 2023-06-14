@@ -142,6 +142,11 @@ section{
     color: var(--main-color-cel);
 }
 
+.multi-texto h3,
+.multi-texto span {
+  display: inline;
+}
+
 .home-content h1{
     font-size: 5.6rem;
     font-weight: 700;
